@@ -1,0 +1,13 @@
+server:
+  port: 8080
+  tomcat:
+    threads:
+      max: 5
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/trader
+    username: postgres
+    password: roottppy
+app:
+  services:
+    remote: http://localhost:8090/trade/{id}
